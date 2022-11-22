@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="250dp"
+    android:background="@drawable/login_round_back"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.levare.verificare.util.RobotoText
+        android:id="@+id/titleText"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select Reason"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_medium">
+
+    </com.levare.verificare.util.RobotoText>
+
+    <Spinner
+        android:layout_below="@+id/titleText"
+        android:id="@+id/sRegion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/manual_conditions"
+        android:prompt="@string/slect_reson" />
+
+    <Spinner
+        android:id="@+id/spReasonRFID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleText"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/manual_conditions_rfid"
+        android:prompt="@string/slect_reson"
+        android:visibility="gone" />
+
+
+    <EditText
+        android:hint="Enter QR Code"
+        android:gravity="center"
+        android:id="@+id/edEnterCode"
+        android:layout_margin="20dp"
+        android:maxLines="1"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/login_round_back"
+        android:layout_width="match_parent"
+        android:inputType="text" />
+
+    <Button
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+       android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/black_blue"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_medium">
+
+    </Button>
+
+</RelativeLayout>

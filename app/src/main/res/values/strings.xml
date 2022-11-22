@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">VERIFICARE</string>
+    <string name="fixed_asset_verification">Fixed Asset Verification</string>
+    <string name="sign_in">Sign In</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registered! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="logout">logout</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="design_by_applexinfotech">Design &amp; Developed by ApplexInfotech.</string>
+    <string name="account_login">Account Login</string>
+    <string name="email_id">Email Id</string>
+    <string name="asset_description"><![CDATA[Plant & Machinery]]></string>
+
+    <string name="title_activity_scanner">ScannerActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="about_us">About us</string>
+    <string name="share_app">Share App</string>
+    <string name="setting">Setting</string>
+    <string name="profile">Profile</string>
+    <string name="info">Info</string>
+    <string name="about_us_content">We are a company set up by a team of Professional Chartered Accountants (CA), CPAs, Cost and Management Accountants (CMA), Management professionals and Company Secretaries (CS). It is our conviction that LCPL offers and delivers the best professional services, all the time and in every instance. Our emphasis rests firmly in delivering the best business processes, teamwork and cooperation. LCPL’s charter and mission are based on ‘Integrity and Honesty’, ‘Teamwork’, ‘Respect and Dignity’, ‘Innovation and Excellence’.</string>
+    <string name="company_name">Company Name</string>
+    <string name="levare_consultants_pvt_ltd">Levare Consultants Pvt. Ltd.</string>
+    <string name="please_enter_a_valid_username_amp_password"><![CDATA[Please enter a valid username & password]]></string>
+    <string name="ok">OK</string>
+
+    <string name="title_activity_splash_screen">SplashActivityScreen</string>
+    <string name="condition_prompt">Select condition</string>
+    <string name="prompt">-Select Reason-</string>
+    <string-array name="condition">
+        <item>-Select Condition-</item>
+        <item>In Use</item>
+        <item>Not in Use</item>
+
+    </string-array>
+
+
+    <string name="slect_reson">Select Reason</string>
+
+    <string-array name="manual_conditions">
+        <item>Select Reason</item>
+        <item>QR Code Not Available</item>
+        <item>QR Code Not Readable</item>
+        <item>QR Code Not Reachable</item>
+    </string-array>
+
+    <string-array name="manual_conditions_rfid">
+        <item>Select Reason</item>
+        <item>RFID Code Not Available</item>
+        <item>RFID Code Not Readable</item>
+        <item>RFID Code Not Reachable</item>
+    </string-array>
+
+    <string name="title_activity_detail_view">DetailViewActivity</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="asset_list">Asset List</string>
+    <string name="location">Location</string>
+    <string name="add_location">Add Location</string>
+    <string name="add_sublocation">Add Sub-Location</string>
+    <string name="submit">Submit</string>
+    <string name="asset_number">Asset number</string>
+    <string name="set_batch">Set Batch</string>
+    <string name="batch_number">Batch number</string>
+    <string name="auto_mode">Auto Mode</string>
+    <string name="detail">Detail</string>
+    <string name="resend_code">Resend Code</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

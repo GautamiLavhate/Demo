@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DashBoardFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lyBottomView"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Time"
+                android:visibility="gone"
+                android:layout_alignParentRight="true">
+            </TextView>
+
+            <com.levare.verificare.util.RobotoText
+                android:id="@+id/btBatchId"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTime"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:background="@drawable/circular_corroner_background_balck_blue"
+                android:text="Selected Batch:-"
+                android:textAllCaps="false"
+                android:textColor="@color/white_text"
+                android:textSize="@dimen/font_size_large">
+
+            </com.levare.verificare.util.RobotoText>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btBatchId"
+                android:layout_margin="4dp"
+                android:background="@color/white">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/llGraphView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rcDateTime"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:padding="8dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <com.levare.verificare.util.RobotoText
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/white"
+                        android:text="Batch Status"
+                        android:textColor="@color/green">
+
+                    </com.levare.verificare.util.RobotoText>
+
+                    <RelativeLayout
+                        android:id="@+id/llProgressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvTitle">
+
+                        <ProgressBar
+                            android:id="@+id/circularProgressbar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="200dp"
+                            android:layout_height="160dp"
+                            android:layout_centerInParent="true"
+                            android:background="@color/white"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/circular"
+                            android:secondaryProgress="100" />
+
+
+                        <com.levare.verificare.util.RobotoText
+                            android:id="@+id/tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:background="@color/white"
+                            android:text="-"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/font_size_very_xlarge" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/llProgressBar"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_margin="4dp"
+                                android:background="@color/green"
+                                android:gravity="center" />
+
+                            <com.levare.verificare.util.RobotoText
+                                android:text="Completed"
+                                android:textColor="@color/green"
+                                android:layout_gravity="center_vertical"
+                                android:textSize="@dimen/font_size_medium"
+                                android:background="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </com.levare.verificare.util.RobotoText>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:background="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_margin="4dp"
+                                android:background="@color/yellow"
+                                android:gravity="center" />
+
+                            <com.levare.verificare.util.RobotoText
+                                android:text="Pending"
+                                android:textColor="@color/yellow"
+                                android:textSize="@dimen/font_size_medium"
+                                android:background="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </com.levare.verificare.util.RobotoText>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp">
+                    </View>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <com.levare.verificare.util.RobotoText
+                        android:id="@+id/tvNotinUse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/white"
+                        android:text="Use / Not In Use"
+                        android:textColor="@color/pink">
+
+                    </com.levare.verificare.util.RobotoText>
+
+                    <RelativeLayout
+                        android:id="@+id/llProgressNotinUseBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvNotinUse">
+
+                        <ProgressBar
+                            android:id="@+id/circularnotinuseProgressbar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="200dp"
+                            android:layout_height="160dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/white"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:progress="33"
+                            android:progressDrawable="@drawable/circular_notinuse"
+                            android:secondaryProgress="100" />
+
+
+                        <com.levare.verificare.util.RobotoText
+                            android:id="@+id/tvCenterNotinUse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:background="@color/white"
+                            android:text="-"
+                            android:textColor="@color/brown"
+                            android:textSize="@dimen/font_size_very_xlarge" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llProgressNotinUseBar"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="4dp"
+                                android:background="@color/brown"
+                                android:gravity="center" />
+                            <com.levare.verificare.util.RobotoText
+                                android:text="In Use"
+                                android:textColor="@color/brown"
+                                android:textSize="@dimen/font_size_medium"
+                                android:background="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </com.levare.verificare.util.RobotoText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="4dp"
+                                android:background="@color/pink"
+                                android:gravity="center" />
+
+                            <com.levare.verificare.util.RobotoText
+                                android:text="Not In Use"
+                                android:textColor="@color/pink"
+                                android:textSize="@dimen/font_size_medium"
+                                android:background="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </com.levare.verificare.util.RobotoText>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp">
+                    </View>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btTotalqt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_below="@+id/llGraphView"
+                android:padding="8dp"
+                android:weightSum="2"
+                android:background="@drawable/circular_correner_red"
+                android:orientation="horizontal">
+
+                <com.levare.verificare.util.RobotoText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@color/red"
+                    android:text="Total Quantity"
+                    android:textColor="@color/white_text"
+                    android:textSize="@dimen/font_size_very_large">
+
+                </com.levare.verificare.util.RobotoText>
+
+                <com.levare.verificare.util.RobotoText
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvTotalCountNumber"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/red"
+                    android:text="-"
+                    android:textColor="@color/white_text"
+                    android:textSize="@dimen/font_size_very_xxlarge"
+                    android:textStyle="bold">
+
+                </com.levare.verificare.util.RobotoText>
+            </LinearLayout>
+
+            <include
+                android:layout_margin="2dp"
+                layout="@layout/lay_grid_view_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btTotalqt"
+                android:background="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

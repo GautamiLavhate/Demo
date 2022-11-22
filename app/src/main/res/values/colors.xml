@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#14355B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimaryDark">#14355B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="red">#FF3333</color>
+    <color name="green">#004D00</color>
+    <color name="black_blue">#14355B</color>
+    <color name="sky_blue">#478DD6</color>
+
+
+    <color name="white_text">#FFFFFF</color>
+    <color name="pink">#C05A81</color>
+
+
+    //login screen colors
+    <color name="brown">#601A1A</color>
+    <color name="blue">#14355B</color>
+    <color name="blue_light">#0288D1</color>
+    <color name="gray">#707070</color>
+    <color name="gray_transaparent">#50707070</color>
+    //forgot screen colors
+    <color name="black">#000000</color>
+
+    <color name="white_transaperent">#01FFFFFF</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="selectedcard">#99A9A9A9</color>
+
+    <color name="yellow">#FFC107</color>
+</resources>

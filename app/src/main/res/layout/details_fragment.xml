@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llDetails"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".fragment.DetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/black_blue"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_back_button" />
+
+        <com.levare.verificare.util.RobotoText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/back"
+            android:text="Details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_medium" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.levare.verificare.util.RobotoText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="Asset Number : "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <com.levare.verificare.util.RobotoText
+                        android:id="@+id/tvAssetNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="-"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_size_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.levare.verificare.util.RobotoText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="Asset Class Description : "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <com.levare.verificare.util.RobotoText
+                        android:id="@+id/tvAssetClassDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="-"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_size_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.levare.verificare.util.RobotoText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="Asset Description :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <com.levare.verificare.util.RobotoText
+                        android:id="@+id/tvassetDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="-"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_size_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.levare.verificare.util.RobotoText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="Date Capitalization :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <com.levare.verificare.util.RobotoText
+                        android:id="@+id/tvDateCapitalization"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="-"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_size_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.levare.verificare.util.RobotoText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="Book Quantity :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <com.levare.verificare.util.RobotoText
+                        android:id="@+id/tvBookQt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="1"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_size_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.levare.verificare.util.RobotoText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="Gross block  :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <com.levare.verificare.util.RobotoText
+                        android:id="@+id/tvGvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="-"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_size_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.levare.verificare.util.RobotoText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="Cost Center :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <com.levare.verificare.util.RobotoText
+                        android:id="@+id/tvCostCenter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="- "
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_size_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.levare.verificare.util.RobotoText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="Responsible Department :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <com.levare.verificare.util.RobotoText
+                        android:id="@+id/tvResponsibledepartment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="- "
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_size_medium" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.levare.verificare.util.RobotoText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="Location :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <com.levare.verificare.util.RobotoText
+                        android:id="@+id/tvLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="- "
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_size_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.levare.verificare.util.RobotoText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="Sub-location  :"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <com.levare.verificare.util.RobotoText
+                        android:id="@+id/tvSubLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="- "
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_size_medium" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.levare.verificare.util.RobotoText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="Last Scan Status : "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <com.levare.verificare.util.RobotoText
+                        android:id="@+id/lastScanStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="---"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/font_size_medium" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/black" />
+            <com.levare.verificare.util.RobotoText
+                android:id="@+id/tvImageAsset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:text="Asset Image(s)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_large" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:id="@+id/llAddImgAsset1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#D4D4D4"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgAddAsset1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_add_"
+                            android:scaleType="fitXY" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llAvailableImgAsset1"
+                        android:visibility="gone"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/imgasset1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY" />
+                            <ImageView
+                                android:visibility="visible"
+                                android:id="@+id/ivEditImgasset1"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_edit"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:id="@+id/llAddImgAsset2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#D4D4D4"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgAddAsset2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_add_"
+                            android:scaleType="fitXY" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llAvailableImgAsset2"
+                        android:visibility="gone"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/imgasset2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY" />
+                            <ImageView
+                                android:id="@+id/ivEditImgasset2"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_edit"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:id="@+id/llAddImgAsset3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#D4D4D4"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgAddAsset3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_add_"
+                            android:scaleType="fitXY" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llAvailableImgAsset3"
+                        android:visibility="gone"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/imgasset3"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY" />
+                            <ImageView
+                                android:id="@+id/ivEditImgasset3"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_edit"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:id="@+id/llAddImgAsset4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:background="#D4D4D4"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgAddAsset4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_add_"
+                            android:scaleType="fitXY" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llAvailableImgAsset4"
+                        android:visibility="gone"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/imgasset4"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY" />
+                            <ImageView
+                                android:id="@+id/ivEditImgasset4"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_edit"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:id="@+id/llAddImgAsset5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#D4D4D4"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgAddAsset5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_add_"
+                            android:scaleType="fitXY" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/llAvailableImgAsset5"
+                        android:visibility="gone"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/imgasset5"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY" />
+                            <ImageView
+                                android:id="@+id/ivEditImgasset5"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_edit"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/black" />
+            <com.levare.verificare.util.RobotoText
+                android:id="@+id/tvConfirmLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:text="Confirm Location"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_large" />
+            <com.levare.verificare.util.RobotoText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Select Plant"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"
+                android:textSize="@dimen/font_size_medium" />
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutPlant"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/spinner_background">
+
+                    <Spinner
+                        android:id="@+id/spinnerSelectPlan"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown" />
+                    <ImageView
+                        android:id="@+id/imgPlantdropdown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_dropdown_arrow"
+                        android:layout_marginRight="10dp"/>
+                </RelativeLayout>
+            <com.levare.verificare.util.RobotoText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Select Location"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"
+                android:textSize="@dimen/font_size_medium"
+                android:layout_marginTop="10dp"/>
+            <RelativeLayout
+                android:id="@+id/relativeLayoutLocation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/spinner_background">
+
+                <Spinner
+                    android:id="@+id/spinnerSelectLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:spinnerMode="dropdown" />
+                <ImageView
+                    android:id="@+id/imgSyncLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_refresh"
+                    android:layout_toLeftOf="@+id/imgdropdownSelectLocation"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"/>
+                <ImageView
+                    android:id="@+id/imgdropdownSelectLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_dropdown_arrow"
+                    android:layout_marginRight="10dp"/>
+            </RelativeLayout>
+
+            <com.levare.verificare.util.RobotoText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Select Sub-Location"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"
+                android:textSize="@dimen/font_size_medium"
+                android:layout_marginTop="10dp"/>
+            <RelativeLayout
+                android:id="@+id/relativeLayoutSubLocation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/spinner_background">
+
+                <Spinner
+                    android:id="@+id/spinnerSelectSubLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:spinnerMode="dropdown" />
+                <ImageView
+                    android:id="@+id/imgSyncSubLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_refresh"
+                    android:layout_toLeftOf="@+id/imgdropdownSubSelectLocation"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"/>
+                <ImageView
+                    android:id="@+id/imgdropdownSubSelectLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_dropdown_arrow"
+                    android:layout_marginRight="10dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/black" />
+            <LinearLayout
+                android:id="@+id/fromAsset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.levare.verificare.util.RobotoText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Quantity Breakup"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <com.levare.verificare.util.RobotoText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="In Use"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edInUse"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:inputType="number">
+
+                </EditText>
+
+                <com.levare.verificare.util.RobotoText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Not In Use"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edNotInUse"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:inputType="number">
+
+                </EditText>
+
+                <com.levare.verificare.util.RobotoText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Not Found "
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edNotFound"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:inputType="number" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <com.levare.verificare.util.RobotoText
+                android:id="@+id/tvSelectCondn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:text="Select Condition"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_large" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/spinner_background">
+                <Spinner
+                    android:id="@+id/spConditionBase"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/condition"
+                    android:prompt="@string/condition_prompt" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_dropdown_arrow"
+                    android:layout_marginRight="10dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/black" />
+            <com.levare.verificare.util.RobotoText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Select Reason or remark for Asset not in use / not in proper condition / Not in batch"
+                android:textColor="#FF3333"
+                android:gravity="center"
+                android:textSize="8dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/black" />
+            <com.levare.verificare.util.RobotoText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:text="Select Reason "
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_large" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/spinner_background">
+                <Spinner
+                    android:id="@+id/spSelctReson"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:prompt="@string/prompt"
+                    android:spinnerMode="dropdown"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_dropdown_arrow"
+                    android:layout_marginRight="10dp"/>
+            </RelativeLayout>
+
+
+            <com.levare.verificare.util.RobotoText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Remark"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_medium" />
+
+            <EditText
+                android:id="@+id/EdRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:padding="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/spinner_background" />
+
+            <Button
+                android:id="@+id/btSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/circular_corroner_background_balck_blue"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

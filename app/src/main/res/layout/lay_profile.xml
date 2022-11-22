@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/activity_profile_background" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfilePicture"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/curve_shape">
+
+        <TextView
+            android:id="@+id/tvProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="14dp"
+            android:drawableStart="@drawable/ic_profile_name"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvProfileName"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:background="#989898" />
+
+        <TextView
+            android:id="@+id/tvProfileEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvProfileName"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_profile_email"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvProfileEmail"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:background="#989898" />
+
+        <TextView
+            android:id="@+id/tvProfileMobile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvProfileEmail"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_profile_mobile"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvProfileMobile"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:background="#989898" />
+
+        <TextView
+            android:id="@+id/tvProfileAadhar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvProfileMobile"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_profile_aadhar"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvProfileAadhar"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:background="#989898" />
+
+        <TextView
+            android:id="@+id/tvProfileEmployeeType"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvProfileAadhar"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_profile_employee_type"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvProfileEmployeeType"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:background="#989898" />
+
+        <TextView
+            android:id="@+id/tvProfileCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvProfileEmployeeType"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_profile_employee_type"
+            android:gravity="center"
+            android:visibility="gone"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:layout_below="@id/tvProfileCompanyName"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:background="#989898" />
+
+        <TextView
+            android:id="@+id/tvProfileAssociateCode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvProfileCompanyName"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_profile_employee_type"
+            android:gravity="center"
+            android:visibility="gone"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvProfileAssociateCode"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:visibility="gone"
+            android:background="#989898" />
+
+        <TextView
+            android:id="@+id/tvProfileChangePass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvProfileAssociateCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/change_password"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/mbtnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvProfileChangePass"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/logout"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

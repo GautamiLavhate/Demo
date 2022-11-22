@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        style="@style/HeaderBar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme.NoActionBar"
+        app:popupTheme="@style/PopupMenuStyle"
+        app:titleTextColor="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/lay_dashbordView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lyBottomView"
+        android:layout_below="@+id/my_toolbar" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbDashboardScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lyBottomView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_dashboard_scan" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbDashboardQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fbDashboardScan"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_action_qr"
+        android:visibility="gone"
+        app:fabSize="mini" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbDashboardRFID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fbDashboardQR"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_action_rfid"
+        android:visibility="gone"
+        app:fabSize="mini" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_"
+        android:backgroundTint="@color/white"
+        app:useCompatPadding="true"
+        android:layout_above="@+id/lyBottomView"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:elevation="10dp"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ivCameraIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lyBottomView"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="24dp"
+        android:alpha="5"
+        android:background="@drawable/circular_img_blur"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_scan_entry" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/lyBottomView"
+        android:background="@color/gray" />
+
+    <include
+        android:id="@+id/lyBottomView"
+        layout="@layout/layout_bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <View
+        android:id="@+id/view_sapareter"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <FrameLayout
+        android:id="@+id/fullScreenView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_transaperent" />
+</RelativeLayout>

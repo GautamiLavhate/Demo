@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.levare.verificare.util.RobotoText
+            android:id="@+id/txtEditImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Edit Image"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_edit"
+            android:drawableTint="@color/black"
+            android:drawablePadding="10dp"
+            android:textSize="@dimen/font_size_large" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+
+        <com.levare.verificare.util.RobotoText
+            android:id="@+id/txtDeleteImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Delete Image"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_delete"
+            android:drawableTint="@color/black"
+            android:drawablePadding="10dp"
+            android:textSize="@dimen/font_size_large" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="@drawable/green_back"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+
+            <com.levare.verificare.util.RobotoText
+                android:background="@drawable/green_back"
+                android:textColor="@color/white_text"
+                android:text="Completed"
+                android:textSize="@dimen/font_size_very_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.levare.verificare.util.RobotoText>
+            <com.levare.verificare.util.RobotoText
+                android:background="@drawable/green_back"
+                android:textColor="@color/white_text"
+                android:text="-"
+                android:id="@+id/tvCompleted"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_very_xxlarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.levare.verificare.util.RobotoText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/circular_corroner_yellow"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+            <com.levare.verificare.util.RobotoText
+                android:background="@drawable/circular_corroner_yellow"
+                android:textColor="@color/white_text"
+                android:text="Pending"
+                android:textSize="@dimen/font_size_very_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.levare.verificare.util.RobotoText>
+            <com.levare.verificare.util.RobotoText
+                android:background="@drawable/circular_corroner_yellow"
+                android:textColor="@color/white_text"
+                android:text="-"
+                android:id="@+id/tvPendingCount"
+
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_very_xxlarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.levare.verificare.util.RobotoText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/circular_corroner_background_balck_blue"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+            <com.levare.verificare.util.RobotoText
+
+                android:text="Auto Mode"
+                android:background="@drawable/circular_corroner_background_balck_blue"
+                android:textColor="@color/white_text"
+                android:textSize="@dimen/font_size_very_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.levare.verificare.util.RobotoText>
+            <com.levare.verificare.util.RobotoText
+                android:background="@drawable/circular_corroner_background_balck_blue"
+                android:textColor="@color/white_text"
+                android:text="-"
+                android:id="@+id/tvAutoModeCount"
+
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_very_xxlarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.levare.verificare.util.RobotoText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/circular_corroner_sky_blue"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+            <com.levare.verificare.util.RobotoText
+                android:background="@drawable/circular_corroner_sky_blue"
+                android:textColor="@color/white_text"
+                android:text="Manual Mode"
+                android:textSize="@dimen/font_size_very_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.levare.verificare.util.RobotoText>
+            <com.levare.verificare.util.RobotoText
+                android:background="@drawable/circular_corroner_sky_blue"
+                android:textColor="@color/white_text"
+                android:text="-"
+                android:id="@+id/tvManualModeCount"
+
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_very_xxlarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.levare.verificare.util.RobotoText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="@drawable/cricular_cornner_indigo"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+            <com.levare.verificare.util.RobotoText
+                android:background="@drawable/cricular_cornner_indigo"
+                android:textColor="@color/white_text"
+                android:text="In Use"
+                android:textSize="@dimen/font_size_very_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.levare.verificare.util.RobotoText>
+            <com.levare.verificare.util.RobotoText
+                android:background="@drawable/cricular_cornner_indigo"
+                android:textColor="@color/white_text"
+                android:text="-"
+                android:id="@+id/tvInUseCount"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_very_xxlarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.levare.verificare.util.RobotoText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/circular_coronner_shade"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1">
+            <com.levare.verificare.util.RobotoText
+                android:background="@drawable/circular_coronner_shade"
+                android:textColor="@color/white_text"
+                android:text="Not In Use"
+                android:textSize="@dimen/font_size_very_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.levare.verificare.util.RobotoText>
+            <com.levare.verificare.util.RobotoText
+                android:background="@drawable/circular_coronner_shade"
+                android:textColor="@color/white_text"
+                android:text="-"
+                android:id="@+id/tvNotinUseCount"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_very_xxlarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.levare.verificare.util.RobotoText>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

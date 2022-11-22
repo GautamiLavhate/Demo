@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="250dp"
+    android:layout_height="180dp"
+    android:background="@drawable/login_round_back">
+
+    <com.levare.verificare.util.RobotoText
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_medium"
+        android:layout_margin="16dp"
+        android:id="@+id/textmsg"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Enter The Scan Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.levare.verificare.util.RobotoText>
+
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/mSubmit"
+            android:textAllCaps="false"
+            android:text="Overwrite"
+            android:background="@color/black_blue"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/mSkip"
+            android:textAllCaps="false"
+            android:text="Skip"
+            android:layout_marginStart="20dp"
+            android:background="@color/black_blue"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

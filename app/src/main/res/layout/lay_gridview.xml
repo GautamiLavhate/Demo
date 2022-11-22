@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/llViewHolder"
+        android:orientation="vertical"
+        android:layout_width="150dp"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Pending"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/font_size_very_xlarge"
+            android:id="@+id/tvHeading"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="100000"
+            android:textSize="@dimen/font_size_very_xxlarge"
+            android:textStyle="bold"
+            android:textColor="@color/white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>
