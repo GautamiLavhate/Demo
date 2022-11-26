@@ -20,8 +20,8 @@ public class RetrofitClient {
                 .setLenient()
                 .create();
         return new Retrofit.Builder()
-                 //.baseUrl("https://applexinfotech.com/fav/api/")
-                .baseUrl("https://verificare.levare.co.in/api/")
+                 .baseUrl("https://applexinfotech.com/fav/api/")
+               // .baseUrl("https://verificare.levare.co.in/api/")
               //  .baseUrl("https://verificare-involute.levare.co.in/")
                 //.baseUrl("http://applexinfotech.com/fav/")
                 .addConverterFactory(GsonConverterFactory.create(gson))

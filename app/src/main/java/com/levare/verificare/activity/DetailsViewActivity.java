@@ -840,7 +840,6 @@ public class DetailsViewActivity extends AppCompatActivity {
     void getPlant(String client_id){
         final ServiceApi serviceApi = RetrofitClient.getClient().create(ServiceApi.class);
         final Call<Plant> plantCall=serviceApi.getPlant(client_id);
-
         plantCall.enqueue(new Callback<Plant>() {
             @Override
             public void onResponse(Call<Plant> call, Response<Plant> response) {
@@ -859,6 +858,7 @@ public class DetailsViewActivity extends AppCompatActivity {
                     for (Plant.PlantDetails data1 : plantDetails) {
                         id.add(data1.getId());
                     }
+                    //Toast.makeText(getApplicationContext(),""+selectedPlantId,Toast.LENGTH_LONG).show();
                     for (int i=0;i<id.size();i++){
                         if (id.contains(String.valueOf(selectedPlantId))){
                             de=id.indexOf(String.valueOf(selectedPlantId));
@@ -882,7 +882,7 @@ public class DetailsViewActivity extends AppCompatActivity {
                             else {
                                 if (position==plantDetails.size()){
                                     selectedPlantId=position;
-                                    strPlantId = plantDetails.get(position).getId();
+                                    strPlantId = plantDetails.get(position-1).getId();
                                     getLocation(sessionManager.getKEY_new_client_id(),strPlantId);
                                 }else {
                                     selectedPlantId=position-1;
